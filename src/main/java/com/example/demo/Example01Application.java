@@ -10,7 +10,7 @@ public class Example01Application {
 
 	public static void main(String[] args) {
 		SpringApplication.run(Example01Application.class, args);
-		System.out.println("Kalpa");
+		System.out.println("Kalpa Sandaruwan");
 	}
 @Bean
     public ModelMapper modelMapper(){

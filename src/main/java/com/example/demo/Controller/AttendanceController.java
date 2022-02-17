@@ -35,5 +35,12 @@ public class AttendanceController {
         return "Test ok";
     }
 
+    @GetMapping("/getDate")
+    public List<AttendanceDTO> getByDate(@RequestParam String date){
+
+        return attendanceService.getByDate(date);
+
+
+    }
 
 }
