@@ -2,7 +2,7 @@ package com.example.demo.service;
 
 import com.example.demo.dto.AttendanceDTO;
 import com.example.demo.entity.Attendance;
-import com.example.demo.exception.ResourceNotFoundException;
+
 import com.example.demo.repo.AttendanceRepo;
 import org.modelmapper.ModelMapper;
 import org.modelmapper.TypeToken;
@@ -64,9 +64,6 @@ public class AttendanceService {
             }
         }
 
-        if(atd.isEmpty()){
-            throw  new ResourceNotFoundException("not found resource");
-        }
 
         return atd;
     }
